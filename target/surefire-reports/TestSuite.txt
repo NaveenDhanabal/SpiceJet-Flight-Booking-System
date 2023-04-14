@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 654.376 s <<< FAILURE! - in TestSuite
+testCases.LoginTest.LoginwithValidCredentials  Time elapsed: 10.849 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@type='email'])[1]"}
+  (Session info: chrome=112.0.5615.50)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4303ad92f1b6c06ce7088a5bb2d84d6e, findElement {using=xpath, value=(//input[@type='email'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.50, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\navan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54611}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54611/devtoo..., se:cdpVersion: 112.0.5615.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4303ad92f1b6c06ce7088a5bb2d84d6e
+	at testCases.LoginTest.LoginwithValidCredentials(LoginTest.java:15)
+
+testCases.RoundTripTest.RoundTrip_Students  Time elapsed: 46.642 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at testCases.RoundTripTest.RoundTrip_Students(RoundTripTest.java:62)
+
