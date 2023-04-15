@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,26 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">14 methods, 2 failed,   12 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.LoginTest" class="method navigator-link" hash-for-method="LoginwithValidCredentials">LoginwithValidCredentials</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.RoundTripTest" class="method navigator-link" hash-for-method="RoundTrip_Students">RoundTrip_Students</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">14 methods,   14 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -137,6 +118,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.LoginTest" class="method navigator-link" hash-for-method="LoginwithValidCredentials">LoginwithValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testCases.ValidationTest" class="method navigator-link" hash-for-method="ManageBooking_Validation">ManageBooking_Validation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -157,6 +143,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.RoundTripTest" class="method navigator-link" hash-for-method="RoundTrip_Students">RoundTrip_Students</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testCases.SignUpTest" class="method navigator-link" hash-for-method="Singup">Singup</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -172,12 +163,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.LoginTest" class="method navigator-link" hash-for-method="TestLogin(spicejettest, Qwerty)">TestLogin(spicejettest, Qwerty)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testCases.LoginTest" class="method navigator-link" hash-for-method="TestLogin(spicejettest@yopmail.com, Test@Password321)">TestLogin(spicejettest@yopmail.com, Test@Password321)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.LoginTest" class="method navigator-link" hash-for-method="TestLogin(spicejettest@yopmail.com, Test@Password321)">TestLogin(spicejettest@yopmail.com, Test@Password321)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testCases.LoginTest" class="method navigator-link" hash-for-method="TestLogin(spicejettest, Qwerty)">TestLogin(spicejettest, Qwerty)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -192,73 +183,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testCases.LoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="LoginwithValidCredentials">
-                  </a> <!-- LoginwithValidCredentials -->
-                  <span class="method-name">LoginwithValidCredentials</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//input[@type=&apos;email&apos;])[1]&quot;}
-  (Session info: chrome=112.0.5615.50)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4303ad92f1b6c06ce7088a5bb2d84d6e, findElement {using=xpath, value=(//input[@type=&apos;email&apos;])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.50, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\navan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54611}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54611/devtoo..., se:cdpVersion: 112.0.5615.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4303ad92f1b6c06ce7088a5bb2d84d6e
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.sendKeys(Unknown Source)
-	at pageObjects.LoginPage.EmailId(LoginPage.java:46)
-	at testCases.LoginTest.LoginwithValidCredentials(LoginTest.java:15)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testCases.RoundTripTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="RoundTrip_Students">
-                  </a> <!-- RoundTrip_Students -->
-                  <span class="method-name">RoundTrip_Students</span>
-                  <div class="stack-trace">java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.sendKeys(Unknown Source)
-	at pageObjects.Passengers.ContactInfo(Passengers.java:96)
-	at testCases.RoundTripTest.RoundTrip_Students(RoundTripTest.java:62)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 34 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -277,46 +201,21 @@ Session ID: 4303ad92f1b6c06ce7088a5bb2d84d6e
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testCases.LoginTest</span>
+              <span class="class-name">testCases.RoundTripTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="LoginwithInValidCredentials">
-                  </a> <!-- LoginwithInValidCredentials -->
-                  <span class="method-name">LoginwithInValidCredentials</span>
+                  <a name="RoundTrip_FamilyFriends">
+                  </a> <!-- RoundTrip_FamilyFriends -->
+                  <span class="method-name">RoundTrip_FamilyFriends</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="TestLogin(spicejettest, Test@Password321)">
-                  </a> <!-- TestLogin(spicejettest, Test@Password321) -->
-                  <span class="method-name">TestLogin</span>
-                  <span class="parameters">(spicejettest,Test@Password321)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TestLogin(spicejettest@yopmail.com, Qwerty)">
-                  </a> <!-- TestLogin(spicejettest@yopmail.com, Qwerty) -->
-                  <span class="method-name">TestLogin</span>
-                  <span class="parameters">(spicejettest@yopmail.com,Qwerty)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TestLogin(spicejettest, Qwerty)">
-                  </a> <!-- TestLogin(spicejettest, Qwerty) -->
-                  <span class="method-name">TestLogin</span>
-                  <span class="parameters">(spicejettest,Qwerty)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TestLogin(spicejettest@yopmail.com, Test@Password321)">
-                  </a> <!-- TestLogin(spicejettest@yopmail.com, Test@Password321) -->
-                  <span class="method-name">TestLogin</span>
-                  <span class="parameters">(spicejettest@yopmail.com,Test@Password321)</span>
+                  <a name="RoundTrip_Students">
+                  </a> <!-- RoundTrip_Students -->
+                  <span class="method-name">RoundTrip_Students</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -339,6 +238,60 @@ Session ID: 4303ad92f1b6c06ce7088a5bb2d84d6e
                   <a name="Onewaytrip_International2">
                   </a> <!-- Onewaytrip_International2 -->
                   <span class="method-name">Onewaytrip_International2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginwithInValidCredentials">
+                  </a> <!-- LoginwithInValidCredentials -->
+                  <span class="method-name">LoginwithInValidCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginwithValidCredentials">
+                  </a> <!-- LoginwithValidCredentials -->
+                  <span class="method-name">LoginwithValidCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestLogin(spicejettest, Test@Password321)">
+                  </a> <!-- TestLogin(spicejettest, Test@Password321) -->
+                  <span class="method-name">TestLogin</span>
+                  <span class="parameters">(spicejettest,Test@Password321)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestLogin(spicejettest@yopmail.com, Qwerty)">
+                  </a> <!-- TestLogin(spicejettest@yopmail.com, Qwerty) -->
+                  <span class="method-name">TestLogin</span>
+                  <span class="parameters">(spicejettest@yopmail.com,Qwerty)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestLogin(spicejettest@yopmail.com, Test@Password321)">
+                  </a> <!-- TestLogin(spicejettest@yopmail.com, Test@Password321) -->
+                  <span class="method-name">TestLogin</span>
+                  <span class="parameters">(spicejettest@yopmail.com,Test@Password321)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestLogin(spicejettest, Qwerty)">
+                  </a> <!-- TestLogin(spicejettest, Qwerty) -->
+                  <span class="method-name">TestLogin</span>
+                  <span class="parameters">(spicejettest,Qwerty)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -372,21 +325,6 @@ Session ID: 4303ad92f1b6c06ce7088a5bb2d84d6e
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testCases.RoundTripTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="RoundTrip_FamilyFriends">
-                  </a> <!-- RoundTrip_FamilyFriends -->
-                  <span class="method-name">RoundTrip_FamilyFriends</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -403,10 +341,10 @@ Session ID: 4303ad92f1b6c06ce7088a5bb2d84d6e
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testCases.SignUpTest&quot;/&gt;
-      &lt;class name=&quot;testCases.ValidationTest&quot;/&gt;
-      &lt;class name=&quot;testCases.OnewayTripTest&quot;/&gt;
       &lt;class name=&quot;testCases.LoginTest&quot;/&gt;
+      &lt;class name=&quot;testCases.OnewayTripTest&quot;/&gt;
       &lt;class name=&quot;testCases.RoundTripTest&quot;/&gt;
+      &lt;class name=&quot;testCases.ValidationTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -450,59 +388,59 @@ data.addRows(14);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Onewaytrip_International2')
 data.setCell(0, 2, 'testCases.OnewayTripTest')
-data.setCell(0, 3, 150498);
+data.setCell(0, 3, 143884);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Singup')
-data.setCell(1, 2, 'testCases.SignUpTest')
-data.setCell(1, 3, 56180);
+data.setCell(1, 1, 'RoundTrip_Students')
+data.setCell(1, 2, 'testCases.RoundTripTest')
+data.setCell(1, 3, 85047);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'RoundTrip_Students')
-data.setCell(2, 2, 'testCases.RoundTripTest')
-data.setCell(2, 3, 46533);
+data.setCell(2, 1, 'Singup')
+data.setCell(2, 2, 'testCases.SignUpTest')
+data.setCell(2, 3, 41825);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'RoundTrip_FamilyFriends')
 data.setCell(3, 2, 'testCases.RoundTripTest')
-data.setCell(3, 3, 36112);
+data.setCell(3, 3, 35346);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'Onewaytrip')
 data.setCell(4, 2, 'testCases.OnewayTripTest')
-data.setCell(4, 3, 32813);
+data.setCell(4, 3, 31814);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'FlightStatus_Validation')
 data.setCell(5, 2, 'testCases.ValidationTest')
-data.setCell(5, 3, 13874);
+data.setCell(5, 3, 13597);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'TestLogin')
 data.setCell(6, 2, 'testCases.LoginTest')
-data.setCell(6, 3, 12889);
+data.setCell(6, 3, 12775);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'TestLogin')
 data.setCell(7, 2, 'testCases.LoginTest')
-data.setCell(7, 3, 12868);
+data.setCell(7, 3, 12744);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'TestLogin')
 data.setCell(8, 2, 'testCases.LoginTest')
-data.setCell(8, 3, 12782);
+data.setCell(8, 3, 12703);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'TestLogin')
 data.setCell(9, 2, 'testCases.LoginTest')
-data.setCell(9, 3, 12772);
+data.setCell(9, 3, 12694);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'ManageBooking_Validation')
 data.setCell(10, 2, 'testCases.ValidationTest')
-data.setCell(10, 3, 12140);
+data.setCell(10, 3, 10557);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'LoginwithValidCredentials')
-data.setCell(11, 2, 'testCases.LoginTest')
-data.setCell(11, 3, 10663);
+data.setCell(11, 1, 'CheckIn_Validation')
+data.setCell(11, 2, 'testCases.ValidationTest')
+data.setCell(11, 3, 8522);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'CheckIn_Validation')
-data.setCell(12, 2, 'testCases.ValidationTest')
-data.setCell(12, 3, 8929);
+data.setCell(12, 1, 'LoginwithInValidCredentials')
+data.setCell(12, 2, 'testCases.LoginTest')
+data.setCell(12, 3, 7683);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'LoginwithInValidCredentials')
+data.setCell(13, 1, 'LoginwithValidCredentials')
 data.setCell(13, 2, 'testCases.LoginTest')
-data.setCell(13, 3, 7909);
+data.setCell(13, 3, 4713);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -540,183 +478,179 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Singup</span>
-                <span class="method-start">54426 ms</span>
+                <span class="method-start">9023 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">110616 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testCases.ValidationTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">Startup</span>
-                <span class="method-start">110957 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">CheckIn_Validation</span>
-                <span class="method-start">121218 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">close</span>
-                <span class="method-start">130148 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">Startup</span>
-                <span class="method-start">130416 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">FlightStatus_Validation</span>
-                <span class="method-start">146722 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">close</span>
-                <span class="method-start">160598 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">Startup</span>
-                <span class="method-start">161063 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">ManageBooking_Validation</span>
-                <span class="method-start">175000 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">close</span>
-                <span class="method-start">187141 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testCases.OnewayTripTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">Startup</span>
-                <span class="method-start">187601 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">Onewaytrip</span>
-                <span class="method-start">204473 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">close</span>
-                <span class="method-start">237286 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">Startup</span>
-                <span class="method-start">237582 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">Onewaytrip_International2</span>
-                <span class="method-start">251813 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">close</span>
-                <span class="method-start">402311 ms</span>
+                <span class="method-start">50858 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">Startup</span>
-                <span class="method-start">402714 ms</span>
+                <span class="method-start">51260 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LoginwithInValidCredentials</span>
-                <span class="method-start">418961 ms</span>
+                <span class="method-start">58306 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">426870 ms</span>
+                <span class="method-start">65990 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Startup</span>
-                <span class="method-start">427157 ms</span>
+                <span class="method-start">66194 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">LoginwithValidCredentials</span>
-                <span class="method-start">439534 ms</span>
+                <span class="method-start">72704 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">450631 ms</span>
+                <span class="method-start">77417 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Startup</span>
-                <span class="method-start">450992 ms</span>
+                <span class="method-start">77641 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TestLogin(spicejettest@yopmail.com, Test@Password321)</span>
-                <span class="method-start">461902 ms</span>
+                <span class="method-start">84165 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">474791 ms</span>
+                <span class="method-start">96940 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Startup</span>
-                <span class="method-start">475084 ms</span>
+                <span class="method-start">97363 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TestLogin(spicejettest@yopmail.com, Qwerty)</span>
-                <span class="method-start">485840 ms</span>
+                <span class="method-start">103935 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">498708 ms</span>
+                <span class="method-start">116679 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Startup</span>
-                <span class="method-start">498897 ms</span>
+                <span class="method-start">116972 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TestLogin(spicejettest, Qwerty)</span>
-                <span class="method-start">511790 ms</span>
+                <span class="method-start">123558 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">524562 ms</span>
+                <span class="method-start">136252 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Startup</span>
-                <span class="method-start">524873 ms</span>
+                <span class="method-start">136471 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TestLogin(spicejettest, Test@Password321)</span>
-                <span class="method-start">535548 ms</span>
+                <span class="method-start">143067 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">548330 ms</span>
+                <span class="method-start">155770 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.OnewayTripTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">Startup</span>
+                <span class="method-start">155976 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Onewaytrip</span>
+                <span class="method-start">163283 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">195097 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">Startup</span>
+                <span class="method-start">195414 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Onewaytrip_International2</span>
+                <span class="method-start">202176 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">346062 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.RoundTripTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">Startup</span>
-                <span class="method-start">548642 ms</span>
+                <span class="method-start">346420 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">RoundTrip_FamilyFriends</span>
-                <span class="method-start">559400 ms</span>
+                <span class="method-start">352477 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">595512 ms</span>
+                <span class="method-start">387823 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Startup</span>
-                <span class="method-start">595764 ms</span>
+                <span class="method-start">388133 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">RoundTrip_Students</span>
-                <span class="method-start">606087 ms</span>
+                <span class="method-start">411941 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">652744 ms</span>
+                <span class="method-start">496988 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.ValidationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">Startup</span>
+                <span class="method-start">497302 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CheckIn_Validation</span>
+                <span class="method-start">503825 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">512347 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">Startup</span>
+                <span class="method-start">512523 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">FlightStatus_Validation</span>
+                <span class="method-start">518892 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">532489 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">Startup</span>
+                <span class="method-start">532675 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ManageBooking_Validation</span>
+                <span class="method-start">540126 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">550684 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

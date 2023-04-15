@@ -11,11 +11,13 @@ public class LoginHeadless extends HeadlessClass{
 	public void LoginwithValidCredentials() throws InterruptedException {
 		LoginPage loginpage = new LoginPage(driver);
 		loginpage.Login();
+		Thread.sleep(2000);
 		loginpage.EmailButton();
 		loginpage.EmailId(prop.getProperty("Email"));
 		loginpage.Password(prop.getProperty("Password"));
 		Thread.sleep(2000);
 		loginpage.LoginButton();
+		System.out.println("You are successfully logged in");
 
 	}
 	
@@ -23,11 +25,15 @@ public class LoginHeadless extends HeadlessClass{
 	public void LoginwithInValidCredentials() throws InterruptedException {
 		LoginPage loginpage = new LoginPage(driver);
 		loginpage.Login();
+		Thread.sleep(2000);
 		loginpage.EmailButton();
 		loginpage.EmailId(prop.getProperty("Email"));
 		loginpage.InvalidPassword(prop.getProperty("InvalidPass"));
 		Thread.sleep(2000);
 		loginpage.LoginButton();
+		Thread.sleep(3000);
+		loginpage.Message();
+		
 	}
 	
 	@Test(dataProvider = "logintestdata")
@@ -64,6 +70,7 @@ public class LoginHeadless extends HeadlessClass{
 		return data;
 				
 	}
+
 
 
 
