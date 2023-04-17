@@ -6,8 +6,8 @@
       <class name="testCases.LoginTest">
         <methods>
           <include name="close"/>
+          <include name="LoginwithInValidCredentials"/>
           <include name="Startup"/>
-          <include name="LoginwithValidCredentials"/>
         </methods>
       </class> <!-- testCases.LoginTest -->
     </classes>

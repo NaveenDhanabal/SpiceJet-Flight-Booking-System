@@ -15,7 +15,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
+import org.openqa.selenium.firefox.FirefoxOptions;
 import io.github.bonigarcia.wdm.WebDriverManager;
 public class Utility {
 
@@ -37,15 +37,22 @@ public class Utility {
 		if(browsername.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions option = new ChromeOptions();
+			//to disable the permission pop-up
 			option.addArguments("disable-notifications");
-			option.addArguments("disable-geolocation");//to disable the permission pop-up
+			option.addArguments("disable-geolocation");
 			driver=new ChromeDriver(option);
 		}else if(browsername.equals("edge")){
 			WebDriverManager.edgedriver().setup();
 			driver=new EdgeDriver();
 		}else if(browsername.equals("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
-			driver=new FirefoxDriver();
+//			System.setProperty("webdriver.gecko.driver", "D:\\Driver\\geckodriver.exe");
+			FirefoxOptions options = new FirefoxOptions();
+			 options.setBinary("C:\\Program Files\\Mozilla Firefox\\firefox.exe");
+			 //to disable the permission pop-up
+			 options.addPreference("dom.webnotifications.enabled", false);
+		     options.addPreference("geo.enabled", false);
+			driver=new FirefoxDriver(options);
 		}
 		
 		driver.manage().window().maximize();
