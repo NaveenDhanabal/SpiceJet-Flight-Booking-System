@@ -106,19 +106,18 @@ public class Passengers {
 	public void PrimaryPassenger() {
 		primarypassenger.click();
 	}
-	public <PassengerDetails> void PassengerDetails(String FirstName, String LastName, String PhoneNumber, String IDnumber) throws InterruptedException {
+	public void PassengerDetails(String FirstName, String LastName, String PhoneNumber, String IDnumber) throws InterruptedException {
 		firstnameP1.sendKeys(FirstName);
 		Thread.sleep(1000);
 		lastnameP1.sendKeys(LastName);
 		Thread.sleep(1000);
 		phonenumberP1.sendKeys(PhoneNumber);
 		Thread.sleep(1000);
-		if(studentIDnumber!=null) {
-		studentIDnumber.sendKeys(IDnumber);
-		}else {
-			final PassengerDetails retrun ;
-			
-		}
+		  if (studentIDnumber != null) {
+		        studentIDnumber.sendKeys(IDnumber);
+		    } else {
+		        return;
+		    }
 	}
 	
 	public void DOBButton() throws InterruptedException {

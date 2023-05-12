@@ -1,6 +1,16 @@
 package testCases;
 
+import java.time.Duration;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.TimeoutException;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 import base.BaseClass;
 import pageObjects.OnewayTripPage;
@@ -64,10 +74,18 @@ public class OnewayTripTest extends BaseClass {
 		Thread.sleep(2000);
 		oneway.Countinue();
 		Thread.sleep(3000);
-		boolean Message = false;
-		if(Message==true) {
-			roundtrip.Message();
-		}else {
+		boolean isFlightAvailable = roundtrip.checkFlightAvailable();
+		if(!isFlightAvailable) {
+		    try {
+		        Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(),'no flights available')]")));
+		    } catch (TimeoutException e) {
+		        List<WebElement> messageElements = driver.findElements(By.xpath("//*[contains(text(),'no flights available')]"));
+		        if (!messageElements.isEmpty()) {
+		            roundtrip.Message();
+		        }
+		    }
+		} else {
 			roundtrip.ContinueButton();
 			Thread.sleep(5000);
 			roundtrip.TripSummary();

@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.LoginTest">
+      <class name="testCases.OnewayTripTest">
         <methods>
-          <include name="close"/>
-          <include name="LoginwithInValidCredentials"/>
           <include name="Startup"/>
+          <include name="Onewaytrip_International2"/>
         </methods>
-      </class> <!-- testCases.LoginTest -->
+      </class> <!-- testCases.OnewayTripTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

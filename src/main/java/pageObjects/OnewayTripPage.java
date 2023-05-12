@@ -45,13 +45,16 @@ public class OnewayTripPage {
 	@FindBy(xpath="//*[name()='rect' and contains(@width,'100%')]")
 	WebElement termsandcondition;
 	
+	@FindBy(xpath="(//div[@class='css-76zvg2 r-19m6qjp r-z2wwpe r-jwli3a r-1b43r93 r-majxgm r-1guathk r-1w50u8q'])[1]")
+	WebElement GuidelinesiAgree;
+	
 	@FindBy(xpath="(//div[@class='css-1dbjc4n r-1awozwy r-z2wwpe r-1loqt21 r-18u37iz r-1777fci r-d9fdf6 r-1w50u8q r-ah5dr5 r-1otgn73'])[1]")
 	WebElement continuebutton;
 	
 	@FindBy(xpath="//div[@class=\"css-1dbjc4n r-1awozwy r-1777fci r-1lpndhm\"]")
 	WebElement message;
 	
-	@FindBy(xpath="(//div[@class='css-1dbjc4n r-1loqt21 r-1otgn73'])[4]")
+	@FindBy(xpath="(//div[@class='css-76zvg2 r-19m6qjp r-z2wwpe r-jwli3a r-1b43r93 r-majxgm r-1guathk r-1w50u8q'])[1]")
 	WebElement iAgree;
 	
 	@FindBy(xpath="(//div[@class='css-1dbjc4n'])[4]")
@@ -99,6 +102,9 @@ public class OnewayTripPage {
 	}
 	public void TermsandCondition() {
 		termsandcondition.click();
+	}
+	public void Guidlines() {
+		GuidelinesiAgree.click();
 	}
 	public void Countinue() throws InterruptedException {
 		continuebutton.click();
